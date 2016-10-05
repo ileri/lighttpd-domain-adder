@@ -5,7 +5,7 @@
 ## **Pre Install**
 
 
-We are assuming that you have been installed Apache.
+We are assuming that you have been installed Lighttpd.
 If you are not please lookup:
  https://www.google.com.tr/search?q=lighttpd+install
 
