@@ -1,0 +1,13 @@
+● lighttpd.service - Lightning Fast Webserver With Light System Requirements
+   Loaded: loaded (/usr/lib/systemd/system/lighttpd.service; disabled; vendor preset: disabled)
+   Active: failed (Result: exit-code) since Thu 2016-10-06 23:38:51 EEST; 4s ago
+  Process: 6112 ExecStart=/usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf (code=exited, status=255)
+ Main PID: 6112 (code=exited, status=255)
+
+Oct 06 23:38:51 serhatcileri systemd[1]: Stopped Lightning Fast Webserver With Light System Requirements.
+Oct 06 23:38:51 serhatcileri systemd[1]: Started Lightning Fast Webserver With Light System Requirements.
+Oct 06 23:38:51 serhatcileri lighttpd[6112]: 2016-10-06 23:38:51: (configfile.c.1078) source: /etc/lighttpd/conf.d/iyibirdeneme.com.conf line: 1 pos: 7 parser failed somehow near here: [
+Oct 06 23:38:51 serhatcileri lighttpd[6112]: 2016-10-06 23:38:51: (configfile.c.1078) source: /etc/lighttpd/lighttpd.conf line: 495 pos: 8 parser failed somehow near here: (EOL)
+Oct 06 23:38:51 serhatcileri systemd[1]: lighttpd.service: Main process exited, code=exited, status=255/n/a
+Oct 06 23:38:51 serhatcileri systemd[1]: lighttpd.service: Unit entered failed state.
+Oct 06 23:38:51 serhatcileri systemd[1]: lighttpd.service: Failed with result 'exit-code'.

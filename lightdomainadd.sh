@@ -45,11 +45,13 @@ then
     exit
   fi
 fi
-
+RExD="${DOMAIN//\./\\\.}"
 cat > $CONF_FILE <<EOL
-$HTTP["host"] == "$DOMAIN" {
+
+\$HTTP["host"] =~ "^$RExD$" {
 server.document-root = "/var/www/$DOMAIN"
 }
+
 EOL
 
 cat >> "/etc/lighttpd/lighttpd.conf" <<EOL
