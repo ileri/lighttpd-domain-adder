@@ -52,11 +52,18 @@ server.document-root = "/var/www/$DOMAIN"
 }
 EOL
 
-cat > "/etc/lighttpd/lighttpd.conf" <<EOL
+cat >> "/etc/lighttpd/lighttpd.conf" <<EOL
 include "$CONF_FILE"
 EOL
 
-#echo "Lighttpd Service is reloading..."
-# FIXME : ADD SERVER RELOAD
+echo "Lighttpd Service is reloading..."
+systemctl restart lighttpd.service
+#if [ -e "/etc/init.d/lighttpd" ];then
+#  /etc/init.d/lighttpd restart
+#elif [ -e "/usr/local/etc/rc.d/lighttpd" ]; then
+#  /usr/local/etc/rc.d/lighttpd restart
+#else
+#  echo "Cannot find lighttpd service"
+#fi
 
 echo "$DOMAIN added to your server."
