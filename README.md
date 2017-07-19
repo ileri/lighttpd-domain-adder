@@ -14,7 +14,7 @@ If you are not please lookup:
 
 Download **lightdomainadd.sh** to your computer. You can use:
 ~~~bash
-wget https://raw.githubusercontent.com/celilileri/lighttpd-domain-adder/master/lightdomainadd.sh
+wget https://raw.githubusercontent.com/ileri/lighttpd-domain-adder/master/lightdomainadd.sh
 ~~~
 
 Then make it executable
